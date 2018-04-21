@@ -4,7 +4,7 @@
 
 React page loading components using to display a loading spin until the page loads completely.
 
-<img src="https://github.com/codefacebook/react-page-loading/blob/master/images/react-page-loading-features.gif" width="77%" alt="react-page-loading features">
+<img src="https://github.com/codefacebook/react-page-loading/blob/master/images/react-page-loading-features.gif" width="67%" alt="react-page-loading features">
 
 ## Features
 
