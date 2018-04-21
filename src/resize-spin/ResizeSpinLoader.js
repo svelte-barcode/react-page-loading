@@ -15,9 +15,9 @@ ResizeSpinLoader.propTypes = {
 
 ResizeSpinLoader.defaultProps = {
   background: '#fff',
-  color: '#ccc',
+  color: '#bebebe',
   duration: 2,
-  size: 11,
+  size: 4,
 }
 
 export default ResizeSpinLoader

@@ -13,9 +13,9 @@ CometSpinLoader.propTypes = {
 }
 
 CometSpinLoader.defaultProps = {
-  color: '#ccc',
+  color: '#bebebe',
   duration: 1.7,
-  size: 90,
+  size: 30,
 }
 
 export default CometSpinLoader

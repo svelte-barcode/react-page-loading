@@ -13,9 +13,9 @@ RotateSpinLoader.propTypes = {
 }
 
 RotateSpinLoader.defaultProps = {
-  color: '#ccc',
+  color: '#bebebe',
   duration: 1.1,
-  size: 10,
+  size: 4,
 }
 
 export default RotateSpinLoader

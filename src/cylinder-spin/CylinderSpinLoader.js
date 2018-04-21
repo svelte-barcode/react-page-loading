@@ -13,9 +13,9 @@ CylinderSpinLoader.propTypes = {
 }
 
 CylinderSpinLoader.defaultProps = {
-  color: '#ccc',
+  color: '#bebebe',
   duration: 1.1,
-  size: 25,
+  size: 8,
 }
 
 export default CylinderSpinLoader

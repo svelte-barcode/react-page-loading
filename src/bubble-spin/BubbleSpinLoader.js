@@ -13,9 +13,9 @@ BubbleSpinLoader.propTypes = {
 }
 
 BubbleSpinLoader.defaultProps = {
-  color: '#ccc',
+  color: '#bebebe',
   duration: 1.3,
-  size: 20,
+  size: 8,
 }
 
 export default BubbleSpinLoader

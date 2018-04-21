@@ -15,9 +15,9 @@ SpinLoader.propTypes = {
 
 SpinLoader.defaultProps = {
   background: '#fff',
-  color: '#ccc',
+  color: '#bebebe',
   duration: 1.4,
-  size: 10,
+  size: 4,
 }
 
 export default SpinLoader

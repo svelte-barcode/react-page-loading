@@ -13,9 +13,9 @@ BubbleLoader.propTypes = {
 }
 
 BubbleLoader.defaultProps = {
-  color: '#ccc',
+  color: '#bebebe',
   duration: 1.8,
-  size: 10,
+  size: 5,
 }
 
 export default BubbleLoader
