@@ -1,7 +1,7 @@
 {
   "name": "react-page-loading",
   "version": "1.0.0",
-  "description": "",
+  "description": "React page loading components using to display a loading spin until the page loads completely.",
   "main": "dist/react-page-loading.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,8 +9,8 @@
     "prepush": "npm run lint",
     "build": "webpack --config webpack.config.prod.js --output-filename react-page-loading.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Bunlong",
+  "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.7.7",
     "babel-eslint": "^7.1.1",
@@ -47,5 +47,24 @@
   },
   "peerDependencies": {
     "styled-components": "^2.x"
+  },
+  "keywords": [
+    "react-page-loading",
+    "page-loading",
+    "page-load",
+    "page-loading-spin",
+    "page-load-spin",
+    "react",
+    "react-component",
+    "react-components",
+    "react"
+  ],
+  "bugs": {
+    "url": "https://github.com/codefacebook/react-page-loading/issues"
+  },
+  "homepage": "https://github.com/codefacebook/react-page-loading",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codefacebook/react-page-loading"
   }
 }

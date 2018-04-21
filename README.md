@@ -1,10 +1,6 @@
-![react-page-loading](https://github.com/codefacebook/react-page-loading/blob/master/images/react-page-loading.png)
-
 # react-page-loading
 
 React page loading components using to display a loading spin until the page loads completely.
-
-<img src="https://github.com/codefacebook/react-page-loading/blob/master/images/react-page-loading-features.gif" width="67%" alt="react-page-loading features">
 
 ## Features
 
@@ -65,3 +61,7 @@ export default class App extends Component {
 | resize-spin   |
 | rotate-spin   |
 | spin          |
+
+## Document
+
+Go through [document](https://github.com/codefacebook/react-page-loading "Github") for more details.
