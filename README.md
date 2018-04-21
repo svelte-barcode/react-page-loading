@@ -2,9 +2,9 @@
 
 # react-page-loading
 
-React page loading components using to display a loading spin until the page loads completely.
+React page loading components using to display a loading spin until the page loads completely [![version](https://img.shields.io/npm/v/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading) [![downloads](https://img.shields.io/npm/dm/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](http://opensource.org/licenses/MIT).
 
-We'd love to have your helping hand on contributions to react-chartjsx by forking and sending a pull request!
+We'd love to have your helping hand on contributions to react-page-loading by forking and sending a pull request!
 
 <img src="https://github.com/codefacebook/react-page-loading/blob/master/images/react-page-loading-features.gif" width="67%" alt="react-page-loading features">
 
