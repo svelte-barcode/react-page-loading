@@ -4,7 +4,7 @@ import Bubble from './Bubble'
 
 const BubbleLoader = props => (
   <Bubble {...props} />
-);
+)
 
 BubbleLoader.propTypes = {
   color: PropTypes.string,

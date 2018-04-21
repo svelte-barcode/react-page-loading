@@ -6,7 +6,8 @@ import PropTypes from 'prop-types'
 // import CometSpinLoader from './comet-spin/CometSpinLoader'
 // import CylinderSpinLoader from './cylinder-spin/CylinderSpinLoader'
 // import ResizeSpinLoader from './resize-spin/ResizeSpinLoader'
-import RotateSpinLoader from './rotate-spin/RotateSpinLoader'
+// import RotateSpinLoader from './rotate-spin/RotateSpinLoader'
+import SpinLoader from './spin/SpinLoader'
 
 export default class PageLoading extends React.Component {
 
@@ -36,7 +37,7 @@ export default class PageLoading extends React.Component {
     if (loading) { 
       return (
         <div style={containerStyle}>
-          <RotateSpinLoader />
+          <SpinLoader />
         </div>
       )
     }

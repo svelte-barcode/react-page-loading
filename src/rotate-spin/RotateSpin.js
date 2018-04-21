@@ -10,13 +10,13 @@ const loading = keyframes`
 `
 
 function getColor(props) {
-  const d = document.createElement('div');
-  d.style.color = props.color;
-  document.body.appendChild(d);
+  const d = document.createElement('div')
+  d.style.color = props.color
+  document.body.appendChild(d)
   const rgbcolor = window.getComputedStyle(d).color;
-  const match = /rgba?\((\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(,\s*\d+[.d+]*)*\)/g.exec(rgbcolor);
+  const match = /rgba?\((\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(,\s*\d+[.d+]*)*\)/g.exec(rgbcolor)
   const color = `${match[1]}, ${match[2]}, ${match[3]}`;
-  return color;
+  return color
 }
 
 const RotateSpin = styled.div`

@@ -2663,9 +2663,9 @@ var _propTypes = __webpack_require__(13);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _RotateSpinLoader = __webpack_require__(39);
+var _SpinLoader = __webpack_require__(39);
 
-var _RotateSpinLoader2 = _interopRequireDefault(_RotateSpinLoader);
+var _SpinLoader2 = _interopRequireDefault(_SpinLoader);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2680,6 +2680,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // import CometSpinLoader from './comet-spin/CometSpinLoader'
 // import CylinderSpinLoader from './cylinder-spin/CylinderSpinLoader'
 // import ResizeSpinLoader from './resize-spin/ResizeSpinLoader'
+// import RotateSpinLoader from './rotate-spin/RotateSpinLoader'
 
 
 var PageLoading = function (_React$Component) {
@@ -2722,7 +2723,7 @@ var PageLoading = function (_React$Component) {
         return _react2.default.createElement(
           'div',
           { style: containerStyle },
-          _react2.default.createElement(_RotateSpinLoader2.default, null)
+          _react2.default.createElement(_SpinLoader2.default, null)
         );
       }
 
@@ -4958,29 +4959,31 @@ var _propTypes = __webpack_require__(13);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _RotateSpin = __webpack_require__(40);
+var _Spin = __webpack_require__(40);
 
-var _RotateSpin2 = _interopRequireDefault(_RotateSpin);
+var _Spin2 = _interopRequireDefault(_Spin);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var RotateSpinLoader = function RotateSpinLoader(props) {
-  return _react2.default.createElement(_RotateSpin2.default, props);
+var SpinLoader = function SpinLoader(props) {
+  return _react2.default.createElement(_Spin2.default, props);
 };
 
-RotateSpinLoader.propTypes = {
+SpinLoader.propTypes = {
+  background: _propTypes2.default.string,
   color: _propTypes2.default.string,
   duration: _propTypes2.default.number,
   size: _propTypes2.default.number
 };
 
-RotateSpinLoader.defaultProps = {
+SpinLoader.defaultProps = {
+  background: '#fff',
   color: '#ccc',
-  duration: 1.1,
+  duration: 1.4,
   size: 10
 };
 
-exports.default = RotateSpinLoader;
+exports.default = SpinLoader;
 
 /***/ }),
 /* 40 */
@@ -4994,7 +4997,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 var _templateObject = _taggedTemplateLiteral(['\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n'], ['\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  animation: ', ';\n  border: ', ';\n  border-left: ', ';\n  border-radius: 50%;\n  font-size: ', ';\n  height: 10em;\n  margin: 60px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 10em;\n  &:after {\n    border-radius: 50%;\n    height: 10em;\n    width: 10em;\n  }\n'], ['\n  animation: ', ';\n  border: ', ';\n  border-left: ', ';\n  border-radius: 50%;\n  font-size: ', ';\n  height: 10em;\n  margin: 60px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 10em;\n  &:after {\n    border-radius: 50%;\n    height: 10em;\n    width: 10em;\n  }\n']);
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation: ', ';\n  background: ', ';\n  background: ', ';\n  border-radius: 50%;\n  font-size: ', ';\n  height: 11em;\n  margin: 50px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 11em;\n  &:before {\n    background: ', ';\n    border-radius: 100% 0 0 0;\n    content: \'\';\n    height: 50%;\n    left: 0;\n    position: absolute;\n    top: 0;\n    width: 50%;\n  }\n  &:after {\n    background: ', ';\n    border-radius: 50%;\n    bottom: 0;\n    content: \'\';\n    height: 75%;\n    left: 0;\n    margin: auto;\n    position: absolute;\n    right: 0;\n    top: 0;\n    width: 75%;\n  }\n'], ['\n  animation: ', ';\n  background: ', ';\n  background: ', ';\n  border-radius: 50%;\n  font-size: ', ';\n  height: 11em;\n  margin: 50px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 11em;\n  &:before {\n    background: ', ';\n    border-radius: 100% 0 0 0;\n    content: \'\';\n    height: 50%;\n    left: 0;\n    position: absolute;\n    top: 0;\n    width: 50%;\n  }\n  &:after {\n    background: ', ';\n    border-radius: 50%;\n    bottom: 0;\n    content: \'\';\n    height: 75%;\n    left: 0;\n    margin: auto;\n    position: absolute;\n    right: 0;\n    top: 0;\n    width: 75%;\n  }\n']);
 
 var _styledComponents = __webpack_require__(41);
 
@@ -5006,27 +5009,21 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var loading = (0, _styledComponents.keyframes)(_templateObject);
 
-function getColor(props) {
-  var d = document.createElement('div');
-  d.style.color = props.color;
-  document.body.appendChild(d);
-  var rgbcolor = window.getComputedStyle(d).color;
-  var match = /rgba?\((\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(,\s*\d+[.d+]*)*\)/g.exec(rgbcolor);
-  var color = match[1] + ', ' + match[2] + ', ' + match[3];
-  return color;
-}
-
-var RotateSpin = _styledComponents2.default.div(_templateObject2, function (props) {
-  return loading + ' ' + props.duration + 's infinite linear';
+var Spin = _styledComponents2.default.div(_templateObject2, function (props) {
+  return loading + ' ' + props.duration + 's infinite linear;';
 }, function (props) {
-  return '1.1em solid rgba(' + getColor(props) + ', 0.2)';
+  return props.color;
 }, function (props) {
-  return '1.1em solid ' + props.color;
+  return 'linear-gradient(to right, ' + props.color + ' 10%, rgba(255, 255, 255, 0) 42%);';
 }, function (props) {
   return props.size + 'px';
+}, function (props) {
+  return props.color;
+}, function (props) {
+  return props.background;
 });
 
-exports.default = RotateSpin;
+exports.default = Spin;
 
 /***/ }),
 /* 41 */
