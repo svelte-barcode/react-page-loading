@@ -2663,9 +2663,9 @@ var _propTypes = __webpack_require__(13);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _BarLoader = __webpack_require__(39);
+var _BubbleSpinLoader = __webpack_require__(39);
 
-var _BarLoader2 = _interopRequireDefault(_BarLoader);
+var _BubbleSpinLoader2 = _interopRequireDefault(_BubbleSpinLoader);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2674,6 +2674,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+// import BarLoader from './bar/BarLoader'
+
 
 var PageLoading = function (_React$Component) {
   _inherits(PageLoading, _React$Component);
@@ -2715,7 +2717,7 @@ var PageLoading = function (_React$Component) {
         return _react2.default.createElement(
           'div',
           { style: containerStyle },
-          _react2.default.createElement(_BarLoader2.default, null)
+          _react2.default.createElement(_BubbleSpinLoader2.default, null)
         );
       }
 
@@ -4951,29 +4953,29 @@ var _propTypes = __webpack_require__(13);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Bar = __webpack_require__(40);
+var _BubbleSpin = __webpack_require__(40);
 
-var _Bar2 = _interopRequireDefault(_Bar);
+var _BubbleSpin2 = _interopRequireDefault(_BubbleSpin);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var BarLoader = function BarLoader(props) {
-  return _react2.default.createElement(_Bar2.default, props);
+var BubbleSpinLoader = function BubbleSpinLoader(props) {
+  return _react2.default.createElement(_BubbleSpin2.default, props);
 };
 
-BarLoader.propTypes = {
+BubbleSpinLoader.propTypes = {
   color: _propTypes2.default.string,
   duration: _propTypes2.default.number,
   size: _propTypes2.default.number
 };
 
-BarLoader.defaultProps = {
-  color: '#000',
-  duration: 1,
-  size: 11
+BubbleSpinLoader.defaultProps = {
+  color: '#ccc',
+  duration: 1.3,
+  size: 20
 };
 
-exports.default = BarLoader;
+exports.default = BubbleSpinLoader;
 
 /***/ }),
 /* 40 */
@@ -4986,8 +4988,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  0%,\n  80%,\n  100% {\n    box-shadow: 0 0;\n    height: 4em;\n  }\n  40% {\n    box-shadow: 0 -2em;\n    height: 5em;\n  }\n'], ['\n  0%,\n  80%,\n  100% {\n    box-shadow: 0 0;\n    height: 4em;\n  }\n  40% {\n    box-shadow: 0 -2em;\n    height: 5em;\n  }\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  animation: ', ';\n  animation-delay: ', ';\n  background: ', ';\n  color: ', ';\n  font-size: ', ';\n  height: 4em;\n  margin: 88px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 1em;\n  &:before {\n    animation: ', ';\n    animation-delay: ', ';\n    background: ', ';\n    content: \'\';\n    height: 4em;\n    left: -1.5em;\n    position: absolute;\n    top: 0;\n    width: 1em;\n  }\n  &:after {\n    animation: ', ';\n    animation-delay: ', ';\n    background: ', ';\n    content: \'\';\n    height: 4em;\n    left: 1.5em;\n    position: absolute;\n    top: 0;\n    width: 1em;\n  }\n'], ['\n  animation: ', ';\n  animation-delay: ', ';\n  background: ', ';\n  color: ', ';\n  font-size: ', ';\n  height: 4em;\n  margin: 88px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 1em;\n  &:before {\n    animation: ', ';\n    animation-delay: ', ';\n    background: ', ';\n    content: \'\';\n    height: 4em;\n    left: -1.5em;\n    position: absolute;\n    top: 0;\n    width: 1em;\n  }\n  &:after {\n    animation: ', ';\n    animation-delay: ', ';\n    background: ', ';\n    content: \'\';\n    height: 4em;\n    left: 1.5em;\n    position: absolute;\n    top: 0;\n    width: 1em;\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  0%,\n  100% {\n    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;\n  }\n  12.5% {\n    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;\n  }\n  25% {\n    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;\n  }\n  37.5% {\n    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;\n  }\n  50% {\n    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;\n  }\n  62.5% {\n    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;\n  }\n  75% {\n    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;\n  }\n  87.5% {\n    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;\n  }\n'], ['\n  0%,\n  100% {\n    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;\n  }\n  12.5% {\n    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;\n  }\n  25% {\n    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;\n  }\n  37.5% {\n    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;\n  }\n  50% {\n    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;\n  }\n  62.5% {\n    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;\n  }\n  75% {\n    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;\n  }\n  87.5% {\n    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation: ', ';\n  border-radius: 50%;\n  color: ', ';\n  font-size: ', ';\n  height: 1em;\n  margin: 100px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 1em;\n'], ['\n  animation: ', ';\n  border-radius: 50%;\n  color: ', ';\n  font-size: ', ';\n  height: 1em;\n  margin: 100px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 1em;\n']);
 
 var _styledComponents = __webpack_require__(41);
 
@@ -4999,31 +5001,15 @@ function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defi
 
 var loading = (0, _styledComponents.keyframes)(_templateObject);
 
-var Bar = _styledComponents2.default.div(_templateObject2, function (props) {
-  return loading + ' ' + props.duration + 's infinite ease-in-out';
-}, function (props) {
-  return props.duration * -0.16 + 's';
-}, function (props) {
-  return props.color;
+var BubbleSpin = _styledComponents2.default.div(_templateObject2, function (props) {
+  return loading + ' ' + props.duration + 's infinite linear;';
 }, function (props) {
   return props.color;
 }, function (props) {
   return props.size + 'px';
-}, function (props) {
-  return loading + ' ' + props.duration + 's infinite ease-in-out;';
-}, function (props) {
-  return props.duration * -0.32 + 's';
-}, function (props) {
-  return props.color;
-}, function (props) {
-  return loading + ' ' + props.duration + 's infinite ease-in-out';
-}, function (props) {
-  return props.duration * 0.08 + 's';
-}, function (props) {
-  return props.color;
 });
 
-exports.default = Bar;
+exports.default = BubbleSpin;
 
 /***/ }),
 /* 41 */

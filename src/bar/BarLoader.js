@@ -13,7 +13,7 @@ BarLoader.propTypes = {
 }
 
 BarLoader.defaultProps = {
-  color: '#000',
+  color: '#ccc',
   duration: 1,
   size: 11,
 }
