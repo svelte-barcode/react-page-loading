@@ -1,8 +1,8 @@
 ![react-page-loading](https://github.com/codefacebook/react-page-loading/blob/master/images/react-page-loading.png)
 
-# react-page-loading
+# react-page-loading [![version](https://img.shields.io/npm/v/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading) [![downloads](https://img.shields.io/npm/dm/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
-React page loading components using to display a loading spin until the page loads completely [![version](https://img.shields.io/npm/v/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading) [![downloads](https://img.shields.io/npm/dm/react-page-loading.svg?style=flat-square)](https://www.npmjs.com/package/react-page-loading) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](http://opensource.org/licenses/MIT).
+React page loading components using to display a loading spin until the page loads completely.
 
 We'd love to have your helping hand on contributions to react-page-loading by forking and sending a pull request!
 
