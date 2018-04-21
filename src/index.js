@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 // import BubbleSpinLoader from './bubble-spin/BubbleSpinLoader'
 // import BubbleLoader from './bubble/BubbleLoader'
 // import CometSpinLoader from './comet-spin/CometSpinLoader'
-import CylinderSpinLoader from './cylinder-spin/CylinderSpinLoader'
+// import CylinderSpinLoader from './cylinder-spin/CylinderSpinLoader'
+// import ResizeSpinLoader from './resize-spin/ResizeSpinLoader'
+import RotateSpinLoader from './rotate-spin/RotateSpinLoader'
 
 export default class PageLoading extends React.Component {
 
@@ -31,10 +33,10 @@ export default class PageLoading extends React.Component {
       transform: 'translate(-50%, -50%)'
     }
 
-    if (loading) {  
+    if (loading) { 
       return (
         <div style={containerStyle}>
-          <CylinderSpinLoader />
+          <RotateSpinLoader />
         </div>
       )
     }

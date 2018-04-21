@@ -2663,9 +2663,9 @@ var _propTypes = __webpack_require__(13);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _CylinderSpinLoader = __webpack_require__(39);
+var _RotateSpinLoader = __webpack_require__(39);
 
-var _CylinderSpinLoader2 = _interopRequireDefault(_CylinderSpinLoader);
+var _RotateSpinLoader2 = _interopRequireDefault(_RotateSpinLoader);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2678,6 +2678,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // import BubbleSpinLoader from './bubble-spin/BubbleSpinLoader'
 // import BubbleLoader from './bubble/BubbleLoader'
 // import CometSpinLoader from './comet-spin/CometSpinLoader'
+// import CylinderSpinLoader from './cylinder-spin/CylinderSpinLoader'
+// import ResizeSpinLoader from './resize-spin/ResizeSpinLoader'
 
 
 var PageLoading = function (_React$Component) {
@@ -2720,7 +2722,7 @@ var PageLoading = function (_React$Component) {
         return _react2.default.createElement(
           'div',
           { style: containerStyle },
-          _react2.default.createElement(_CylinderSpinLoader2.default, null)
+          _react2.default.createElement(_RotateSpinLoader2.default, null)
         );
       }
 
@@ -4956,29 +4958,29 @@ var _propTypes = __webpack_require__(13);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _CylinderSpin = __webpack_require__(40);
+var _RotateSpin = __webpack_require__(40);
 
-var _CylinderSpin2 = _interopRequireDefault(_CylinderSpin);
+var _RotateSpin2 = _interopRequireDefault(_RotateSpin);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var CylinderSpinLoader = function CylinderSpinLoader(props) {
-  return _react2.default.createElement(_CylinderSpin2.default, props);
+var RotateSpinLoader = function RotateSpinLoader(props) {
+  return _react2.default.createElement(_RotateSpin2.default, props);
 };
 
-CylinderSpinLoader.propTypes = {
+RotateSpinLoader.propTypes = {
   color: _propTypes2.default.string,
   duration: _propTypes2.default.number,
   size: _propTypes2.default.number
 };
 
-CylinderSpinLoader.defaultProps = {
+RotateSpinLoader.defaultProps = {
   color: '#ccc',
   duration: 1.1,
-  size: 25
+  size: 10
 };
 
-exports.default = CylinderSpinLoader;
+exports.default = RotateSpinLoader;
 
 /***/ }),
 /* 40 */
@@ -4991,8 +4993,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n    0%,\n    100% {\n      box-shadow: 0em -2.6em 0em 0em ', ', 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.5), -1.8em -1.8em 0 0em rgba(', ', 0.7);\n    }\n    12.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.7), 1.8em -1.8em 0 0em ', ', 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.5);\n    }\n    25% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.5), 1.8em -1.8em 0 0em rgba(', ', 0.7), 2.5em 0em 0 0em ', ', 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    37.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.5), 2.5em 0em 0 0em rgba(', ', 0.7), 1.75em 1.75em 0 0em ', ', 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    50% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.5), 1.75em 1.75em 0 0em rgba(', ', 0.7), 0em 2.5em 0 0em ', ', -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    62.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.5), 0em 2.5em 0 0em rgba(', ', 0.7), -1.8em 1.8em 0 0em ', ', -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    75% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.5), -1.8em 1.8em 0 0em rgba(', ', 0.7), -2.6em 0em 0 0em ', ', -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    87.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.5), -2.6em 0em 0 0em rgba(', ', 0.7), -1.8em -1.8em 0 0em ', ';\n    }\n  '], ['\n    0%,\n    100% {\n      box-shadow: 0em -2.6em 0em 0em ', ', 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.5), -1.8em -1.8em 0 0em rgba(', ', 0.7);\n    }\n    12.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.7), 1.8em -1.8em 0 0em ', ', 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.5);\n    }\n    25% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.5), 1.8em -1.8em 0 0em rgba(', ', 0.7), 2.5em 0em 0 0em ', ', 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    37.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.5), 2.5em 0em 0 0em rgba(', ', 0.7), 1.75em 1.75em 0 0em ', ', 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    50% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.5), 1.75em 1.75em 0 0em rgba(', ', 0.7), 0em 2.5em 0 0em ', ', -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    62.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.5), 0em 2.5em 0 0em rgba(', ', 0.7), -1.8em 1.8em 0 0em ', ', -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    75% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.5), -1.8em 1.8em 0 0em rgba(', ', 0.7), -2.6em 0em 0 0em ', ', -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    87.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.5), -2.6em 0em 0 0em rgba(', ', 0.7), -1.8em -1.8em 0 0em ', ';\n    }\n  ']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  animation: ', ';\n  border-radius: 50%;\n  font-size: ', ';\n  height: 1em;\n  margin: 100px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 1em;\n'], ['\n  animation: ', ';\n  border-radius: 50%;\n  font-size: ', ';\n  height: 1em;\n  margin: 100px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 1em;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n'], ['\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation: ', ';\n  border: ', ';\n  border-left: ', ';\n  border-radius: 50%;\n  font-size: ', ';\n  height: 10em;\n  margin: 60px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 10em;\n  &:after {\n    border-radius: 50%;\n    height: 10em;\n    width: 10em;\n  }\n'], ['\n  animation: ', ';\n  border: ', ';\n  border-left: ', ';\n  border-radius: 50%;\n  font-size: ', ';\n  height: 10em;\n  margin: 60px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 10em;\n  &:after {\n    border-radius: 50%;\n    height: 10em;\n    width: 10em;\n  }\n']);
 
 var _styledComponents = __webpack_require__(41);
 
@@ -5002,24 +5004,29 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-function animation(props) {
+var loading = (0, _styledComponents.keyframes)(_templateObject);
+
+function getColor(props) {
   var d = document.createElement('div');
   d.style.color = props.color;
   document.body.appendChild(d);
   var rgbcolor = window.getComputedStyle(d).color;
   var match = /rgba?\((\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(,\s*\d+[.d+]*)*\)/g.exec(rgbcolor);
   var color = match[1] + ', ' + match[2] + ', ' + match[3];
-
-  return (0, _styledComponents.keyframes)(_templateObject, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color);
+  return color;
 }
 
-var CylinderSpin = _styledComponents2.default.div(_templateObject2, function (props) {
-  return animation(props) + ' ' + props.duration + 's infinite ease;';
+var RotateSpin = _styledComponents2.default.div(_templateObject2, function (props) {
+  return loading + ' ' + props.duration + 's infinite linear';
+}, function (props) {
+  return '1.1em solid rgba(' + getColor(props) + ', 0.2)';
+}, function (props) {
+  return '1.1em solid ' + props.color;
 }, function (props) {
   return props.size + 'px';
 });
 
-exports.default = CylinderSpin;
+exports.default = RotateSpin;
 
 /***/ }),
 /* 41 */
