@@ -1,6 +1,12 @@
+![react-page-loading](https://github.com/codefacebook/react-page-loading/blob/master/images/react-page-loading.png)
+
 # react-page-loading
 
 React page loading components using to display a loading spin until the page loads completely.
+
+We'd love to have your helping hand on contributions to react-chartjsx by forking and sending a pull request!
+
+<img src="https://github.com/codefacebook/react-page-loading/blob/master/images/react-page-loading-features.gif" width="67%" alt="react-page-loading features">
 
 ## Features
 
@@ -62,6 +68,8 @@ export default class App extends Component {
 | rotate-spin   |
 | spin          |
 
-## Document
+## License
 
-Go through [document](https://github.com/codefacebook/react-page-loading "Github") for more details.
+MIT License
+
+Copyright (c) 2018 [codefacebook](https://github.com/codefacebook), Maintained by [Bunlong](https://github.com/Bunlong)
