@@ -2663,9 +2663,9 @@ var _propTypes = __webpack_require__(13);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _BubbleLoader = __webpack_require__(39);
+var _CylinderSpinLoader = __webpack_require__(39);
 
-var _BubbleLoader2 = _interopRequireDefault(_BubbleLoader);
+var _CylinderSpinLoader2 = _interopRequireDefault(_CylinderSpinLoader);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2676,6 +2676,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 // import BarLoader from './bar/BarLoader'
 // import BubbleSpinLoader from './bubble-spin/BubbleSpinLoader'
+// import BubbleLoader from './bubble/BubbleLoader'
+// import CometSpinLoader from './comet-spin/CometSpinLoader'
 
 
 var PageLoading = function (_React$Component) {
@@ -2718,7 +2720,7 @@ var PageLoading = function (_React$Component) {
         return _react2.default.createElement(
           'div',
           { style: containerStyle },
-          _react2.default.createElement(_BubbleLoader2.default, null)
+          _react2.default.createElement(_CylinderSpinLoader2.default, null)
         );
       }
 
@@ -4954,29 +4956,29 @@ var _propTypes = __webpack_require__(13);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _Bubble = __webpack_require__(40);
+var _CylinderSpin = __webpack_require__(40);
 
-var _Bubble2 = _interopRequireDefault(_Bubble);
+var _CylinderSpin2 = _interopRequireDefault(_CylinderSpin);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var BubbleLoader = function BubbleLoader(props) {
-  return _react2.default.createElement(_Bubble2.default, props);
+var CylinderSpinLoader = function CylinderSpinLoader(props) {
+  return _react2.default.createElement(_CylinderSpin2.default, props);
 };
 
-BubbleLoader.propTypes = {
+CylinderSpinLoader.propTypes = {
   color: _propTypes2.default.string,
   duration: _propTypes2.default.number,
   size: _propTypes2.default.number
 };
 
-BubbleLoader.defaultProps = {
+CylinderSpinLoader.defaultProps = {
   color: '#ccc',
-  duration: 1.8,
-  size: 10
+  duration: 1.1,
+  size: 25
 };
 
-exports.default = BubbleLoader;
+exports.default = CylinderSpinLoader;
 
 /***/ }),
 /* 40 */
@@ -4989,8 +4991,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _templateObject = _taggedTemplateLiteral(['\n  0%,\n  80%,\n  100% {\n    box-shadow: 0 2.5em 0 -1.3em;\n  }\n  40% {\n    box-shadow: 0 2.5em 0 0;\n  }\n'], ['\n  0%,\n  80%,\n  100% {\n    box-shadow: 0 2.5em 0 -1.3em;\n  }\n  40% {\n    box-shadow: 0 2.5em 0 0;\n  }\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  animation: ', ';\n  animation-delay: ', ';\n  animation-fill-mode: both;\n  border-radius: 50%;\n  color: ', ';\n  font-size: ', ';\n  height: 2.5em;\n  margin: 80px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 2.5em;\n  &:before {\n    animation: ', ';\n    animation-delay: ', ';\n    animation-fill-mode: both;\n    border-radius: 50%;\n    content: \'\';\n    height: 2.5em;\n    left: -3.5em;\n    position: absolute;\n    top: 0;\n    width: 2.5em;\n  }\n  &:after {\n    animation: ', ';\n    animation-fill-mode: both;\n    border-radius: 50%;\n    content: \'\';\n    height: 2.5em;\n    left: 3.5em;\n    position: absolute;\n    top: 0;\n    width: 2.5em;\n  }\n'], ['\n  animation: ', ';\n  animation-delay: ', ';\n  animation-fill-mode: both;\n  border-radius: 50%;\n  color: ', ';\n  font-size: ', ';\n  height: 2.5em;\n  margin: 80px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 2.5em;\n  &:before {\n    animation: ', ';\n    animation-delay: ', ';\n    animation-fill-mode: both;\n    border-radius: 50%;\n    content: \'\';\n    height: 2.5em;\n    left: -3.5em;\n    position: absolute;\n    top: 0;\n    width: 2.5em;\n  }\n  &:after {\n    animation: ', ';\n    animation-fill-mode: both;\n    border-radius: 50%;\n    content: \'\';\n    height: 2.5em;\n    left: 3.5em;\n    position: absolute;\n    top: 0;\n    width: 2.5em;\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(['\n    0%,\n    100% {\n      box-shadow: 0em -2.6em 0em 0em ', ', 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.5), -1.8em -1.8em 0 0em rgba(', ', 0.7);\n    }\n    12.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.7), 1.8em -1.8em 0 0em ', ', 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.5);\n    }\n    25% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.5), 1.8em -1.8em 0 0em rgba(', ', 0.7), 2.5em 0em 0 0em ', ', 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    37.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.5), 2.5em 0em 0 0em rgba(', ', 0.7), 1.75em 1.75em 0 0em ', ', 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    50% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.5), 1.75em 1.75em 0 0em rgba(', ', 0.7), 0em 2.5em 0 0em ', ', -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    62.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.5), 0em 2.5em 0 0em rgba(', ', 0.7), -1.8em 1.8em 0 0em ', ', -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    75% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.5), -1.8em 1.8em 0 0em rgba(', ', 0.7), -2.6em 0em 0 0em ', ', -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    87.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.5), -2.6em 0em 0 0em rgba(', ', 0.7), -1.8em -1.8em 0 0em ', ';\n    }\n  '], ['\n    0%,\n    100% {\n      box-shadow: 0em -2.6em 0em 0em ', ', 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.5), -1.8em -1.8em 0 0em rgba(', ', 0.7);\n    }\n    12.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.7), 1.8em -1.8em 0 0em ', ', 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.5);\n    }\n    25% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.5), 1.8em -1.8em 0 0em rgba(', ', 0.7), 2.5em 0em 0 0em ', ', 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    37.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.5), 2.5em 0em 0 0em rgba(', ', 0.7), 1.75em 1.75em 0 0em ', ', 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    50% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.5), 1.75em 1.75em 0 0em rgba(', ', 0.7), 0em 2.5em 0 0em ', ', -1.8em 1.8em 0 0em rgba(', ', 0.2), -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    62.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.5), 0em 2.5em 0 0em rgba(', ', 0.7), -1.8em 1.8em 0 0em ', ', -2.6em 0em 0 0em rgba(', ', 0.2), -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    75% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.5), -1.8em 1.8em 0 0em rgba(', ', 0.7), -2.6em 0em 0 0em ', ', -1.8em -1.8em 0 0em rgba(', ', 0.2);\n    }\n    87.5% {\n      box-shadow: 0em -2.6em 0em 0em rgba(', ', 0.2), 1.8em -1.8em 0 0em rgba(', ', 0.2), 2.5em 0em 0 0em rgba(', ', 0.2), 1.75em 1.75em 0 0em rgba(', ', 0.2), 0em 2.5em 0 0em rgba(', ', 0.2), -1.8em 1.8em 0 0em rgba(', ', 0.5), -2.6em 0em 0 0em rgba(', ', 0.7), -1.8em -1.8em 0 0em ', ';\n    }\n  ']),
+    _templateObject2 = _taggedTemplateLiteral(['\n  animation: ', ';\n  border-radius: 50%;\n  font-size: ', ';\n  height: 1em;\n  margin: 100px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 1em;\n'], ['\n  animation: ', ';\n  border-radius: 50%;\n  font-size: ', ';\n  height: 1em;\n  margin: 100px auto;\n  position: relative;\n  text-indent: -9999em;\n  transform: translateZ(0);\n  width: 1em;\n']);
 
 var _styledComponents = __webpack_require__(41);
 
@@ -5000,25 +5002,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var loading = (0, _styledComponents.keyframes)(_templateObject);
+function animation(props) {
+  var d = document.createElement('div');
+  d.style.color = props.color;
+  document.body.appendChild(d);
+  var rgbcolor = window.getComputedStyle(d).color;
+  var match = /rgba?\((\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*(,\s*\d+[.d+]*)*\)/g.exec(rgbcolor);
+  var color = match[1] + ', ' + match[2] + ', ' + match[3];
 
-var Bubble = _styledComponents2.default.div(_templateObject2, function (props) {
-  return loading + ' ' + props.duration + 's infinite ease-in-out;';
-}, function (props) {
-  return props.duration * -0.16 + 's';
-}, function (props) {
-  return props.color;
+  return (0, _styledComponents.keyframes)(_templateObject, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color, color, color, color, color, color, color, color, color, props.color);
+}
+
+var CylinderSpin = _styledComponents2.default.div(_templateObject2, function (props) {
+  return animation(props) + ' ' + props.duration + 's infinite ease;';
 }, function (props) {
   return props.size + 'px';
-}, function (props) {
-  return loading + ' ' + props.duration + 's infinite ease-in-out;';
-}, function (props) {
-  return props.duration * -0.32 + 's';
-}, function (props) {
-  return loading + ' ' + props.duration + 's infinite ease-in-out;';
 });
 
-exports.default = Bubble;
+exports.default = CylinderSpin;
 
 /***/ }),
 /* 41 */

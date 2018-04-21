@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 // import BarLoader from './bar/BarLoader'
 // import BubbleSpinLoader from './bubble-spin/BubbleSpinLoader'
-import BubbleLoader from './bubble/BubbleLoader'
+// import BubbleLoader from './bubble/BubbleLoader'
+// import CometSpinLoader from './comet-spin/CometSpinLoader'
+import CylinderSpinLoader from './cylinder-spin/CylinderSpinLoader'
 
 export default class PageLoading extends React.Component {
 
@@ -32,7 +34,7 @@ export default class PageLoading extends React.Component {
     if (loading) {  
       return (
         <div style={containerStyle}>
-          <BubbleLoader />
+          <CylinderSpinLoader />
         </div>
       )
     }
